@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "price": "0,60",
+    "name": "Bier",
+    "image": "https://www.biernet.nl/images/merken/38859-hertog%20jan%20pilsener%20bier%20in%20glas.jpg",
+    "description": "Hertog Jan"
+  },
+  {
+    "id": 1,
+    "price": "0,60",
+    "name": "Energy",
+    "image": "https://www.biernet.nl/images/merken/38859-hertog%20jan%20pilsener%20bier%20in%20glas.jpg",
+    "description": "Hertog Jan"
+  },
+  {
+    "id": 2,
+    "price": "0,60",
+    "name": "Radler",
+    "image": "https://www.biernet.nl/images/merken/38859-hertog%20jan%20pilsener%20bier%20in%20glas.jpg",
+    "description": "Hertog Jan"
+  },
+  {
+    "id": 3,
+    "price": "0,60",
+    "name": "Fris",
+    "image": "https://www.biernet.nl/images/merken/38859-hertog%20jan%20pilsener%20bier%20in%20glas.jpg",
+    "description": "Hertog Jan"
+  }
+]

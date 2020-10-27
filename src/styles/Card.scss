@@ -1,0 +1,146 @@
+@import 'variables';
+
+.card,
+.small-card {
+  background: $background-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 350px;
+  min-width: 300px;
+  width: 80vw;
+  position: relative;
+  color: white;
+  border-radius: 5px;
+
+  &--transparent {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  & .header-wrapper {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  & .header,
+  .header--round {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    font-family: $header-font;
+    background: $primary-color;
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    z-index: 15;
+  }
+
+  & .header--round,
+  .header-wrapper--round {
+    border-radius: 5px;
+  }
+
+  & .triangle {
+    display: inline-block;
+    z-index: 10;
+    background: $primary-color;
+    transform: rotate(45deg);
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: -15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  & .header-message {
+    background-color: $accent-color;
+    width: calc(100% - 35px);
+    height: 21px;
+    padding-left: 29px;
+    padding-right: 8px;
+    line-height: 21px;
+    font-size: 0.9rem;
+    position: absolute;
+    z-index: 5;
+    top: 48px;
+    right: 0;
+    transition: transform 250ms ease;
+    color: #ffffff;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 5px 5px 0;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &.visible {
+      transform: translateY(0);
+    }
+
+    &__close {
+      color: inherit;
+      height: 21px;
+      width: 21px;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      outline: none;
+    }
+  }
+
+  & .body {
+    margin-top: -1em;
+    padding: 25px;
+
+    & .input {
+      width: 100%;
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    &.flex {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    grid-area: buttons;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .footer {
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+
+    & p {
+      padding: 5px 15px;
+    }
+
+    //&.agree {
+    //  background: $second-house-color;
+    //}
+    //
+    //&.disagree {
+    //  background: $european-parliament-color;
+    //}
+  }
+}
+
+.small-card {
+  width: auto;
+  max-width: none;
+  min-width: auto;
+}

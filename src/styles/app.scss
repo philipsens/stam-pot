@@ -1,0 +1,62 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+// Normalize
+@import '~normalize-scss/sass/normalize';
+// Components
+@import 'Header';
+@import 'variables';
+@import 'Card';
+@import 'Button';
+@import 'Input';
+@import 'ProductCard';
+@import 'InfoCard';
+
+// Global styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  color: $primary-font-color;
+  background: $background-gradient;
+}
+
+// Reset that shit
+html,
+body {
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+}

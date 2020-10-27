@@ -1,0 +1,44 @@
+@import 'variables';
+
+.product-card {
+  &__container {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 7px 15px 31px 15px 7px;
+    grid-template-areas: 'image p1' 'image description' 'image name' 'image price' 'image p2';
+    grid-column-gap: 5px;
+    font-size: 12px;
+    overflow-y: hidden;
+    //transition: grid 0.3s ease-out;
+  }
+
+  &__image {
+    border-radius: 5px 0 0 5px;
+    grid-area: image;
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__description {
+    grid-area: description;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+  }
+
+  &__name {
+    grid-area: name;
+    color: $primary-color;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__price {
+    grid-area: price;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
